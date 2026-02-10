@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solo Mexico | Menú Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b4991",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221310",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .leader-line {
+            flex-grow: 1;
+            border-bottom: 1px dotted rgba(236, 55, 19, 0.3);
+            margin: 0 10px;
+            margin-bottom: 5px;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200 antialiased font-display transition-colors duration-300">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-primary/10 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-4">
+        
+        <!-- Logo & Title Row -->
+        <div class="w-full md:w-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img alt="Solo Mexico Logo" class="h-10 w-auto object-contain" src="https://ui.wembla.com/api/browse/media/solomexico/LOGO_SOLO_MEXICO.png?view=1"/>
+                <div class="h-6 w-[1px] bg-primary/20"></div>
+                <h1 class="text-xs uppercase tracking-[0.15em] font-medium text-stone-500">Menú Digital</h1>
+            </div>
+            <!-- Mobile Return Button (Visible only on small screens) -->
+            <a class="md:hidden group flex items-center gap-1 px-3 py-1.5 rounded-full border border-primary/20 hover:border-primary hover:bg-primary/5 transition-all" href="solomexico.html">
+                <span class="material-symbols-outlined text-primary text-xs">arrow_back</span>
+                <span class="text-[10px] uppercase tracking-widest font-bold text-primary">Regresar</span>
+            </a>
+        </div>
+
+        <!-- Navigation (Scrollable on mobile, Centered on Desktop) -->
+        <nav class="w-full md:w-auto overflow-x-auto no-scrollbar pb-1 md:pb-0">
+            <div class="flex items-center gap-6 text-[10px] md:text-xs uppercase tracking-widest font-semibold whitespace-nowrap px-1">
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#desayunos">Desayunos</a>
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#botanas">Botanas</a>
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#sopas">Sopas</a>
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#tacos">Tacos</a>
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#mexico-de-mis-amores">México de mis Amores</a>
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#postres">Postres</a>
+                <a class="hover:text-primary transition-colors py-1 border-b-2 border-transparent hover:border-primary" href="#para-compartir">Para Compartir</a>
+            </div>
+        </nav>
+
+        <!-- Desktop Return Button -->
+        <a class="hidden md:flex group items-center gap-2 px-4 py-2 rounded-full border border-primary/20 hover:border-primary hover:bg-primary/5 transition-all" href="solomexico.html">
+            <span class="material-symbols-outlined text-primary text-sm">arrow_back</span>
+            <span class="text-xs uppercase tracking-widest font-bold text-primary">Regresar</span>
+        </a>
+    </div>
+</header></div>
+</header>
+<main class="max-w-6xl mx-auto px-6 py-12">
+<!-- Introduction -->
+<div class="text-center mb-16">
+<p class="text-primary font-medium tracking-[0.3em] uppercase text-xs mb-2 italic">Sabor Auténtico</p>
+<h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-4">Menú Solo México</h2>
+<div class="w-16 h-1 bg-primary mx-auto mb-6"></div>
+<p class="max-w-xl mx-auto text-stone-500 dark:text-stone-400 text-sm leading-relaxed">
+                Descubre la autentica cocina mexicana de mama en San Pedro Sula. Ingredientes frescos y recetas tradicionales.
+            </p>
+</div>
+<!-- Grid Layout for Menu Categories -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16 items-start">
+<!-- Category: Desayunos -->
+<section class="space-y-6 lg:col-span-2" id="desayunos">
+<div class="flex items-center gap-4 mb-6">
+<h3 class="text-2xl font-bold tracking-tight uppercase text-primary">Desayunos</h3>
+<div class="flex-1 h-[1px] bg-primary/10"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Huevos Solo México</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 195</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Huevos estrellados en una cama de nachos con carne deshebrada en salsa verde, frijoles y aguacate.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Mexicano</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 185</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Huevos revueltos con vegetales, jalapeño, chorizo o chicharrón en salsa verde, acompañado con frijoles, aguacate y tortillas.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Omelette de Chilaquil</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 198</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Omelette con chilaquil en salsa roja o verde, frijoles, aguacate y queso.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Veracruzanos</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 185</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Tacos de huevos bañados en salsa de frijoles con chorizo, queso y salsa verde.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Huevos Divorciados</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 190</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Deliciosos huevos bañados con salsa verde y salsa roja divididos por frijoles. Acompañados con tortillas.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Chilaquil con Huevo</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 220</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">2 huevos al gusto en salsa roja o verde con frijoles y aguacate.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Huevos en Mole</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 195</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Deliciosos huevos estrellados bañados en salsa de mole, jamón o chorizo, queso, crema, frijoles y aguacate. Acompañado con tortillas.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Rancheros</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 170</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">2 huevos estrellados en una tortilla con jamón o chorizo, bañados con salsa ranchera, acompañados con frijoles y aguacate.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Omelette con Rajas</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 180</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Omelette relleno con salsa de rajas de chile dulce y jalapeños, maíz, queso y crema. Acompañado con frijoles y aguacate</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Chimichanga</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 195</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Tortilla de harina rellena de huevo, frijoles, chorizo y quesillo, bañada en salsa de chipotle.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Enfrijoladas o Entomatadas</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 148</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Quesadillas bañadas con salsa de frijoles o salsa guajillo con queso y crema.</p>
+</div>
+<!-- Item -->
+<div class="group cursor-default">
+<div class="flex items-end justify-between mb-1">
+<span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Panquequitos con miel</span>
+<div class="leader-line"></div>
+<span class="font-bold text-primary">L 148</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">4 piezas de panquequitos con miel.</p>
+</div>
+</div>
+</section>
+<!-- Category: Botanas -->
+<section class="space-y-6 lg:col-span-2" id="botanas">
+    <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-2xl font-bold tracking-tight uppercase text-primary">Botanas</h3>
+        <div class="flex-1 h-[1px] bg-primary/10"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Momias</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 265</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">3 Chiles jalapeños rellenos de queso derretido y pastor jugoso, envueltos en crujiente tocino. Un bocado explosivo, ahumado picantito.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Esquites</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 145</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Granos de elote desgranado, mezclados con un toque de mantequilla amarilla y un toque de mayonesa, chile en polvo y cilantro. Acompañado con totopos.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Fundidos</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary whitespace-nowrap min-w-fit text-right">L 135 | L 175 | L 210</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Queso derretido a su punto, acompañado con totopos o tortillas. Elige tu favorito: Con Frijoles (L 135), Con Chorizo (L 175), o Mixto (L 210).</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Frijoles Charros</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 156</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Receta tradicional del norte de México, llena de sabor. Frijoles cocidos lentamente con cebolla, chile dulce, chorizo y chicharrón bañados con cerveza nacional.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Aguachile de Camaron</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 290</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Camarones frescos marinados con limón, bañados en una cremosa y picante salsa de aguacate, acompañados de pepino, cebolla morada y toques de cilantro.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Sopes</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 155</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">3 sopes doraditos con frijoles, lechuga fresca, crema, queso y tu elección de pollo desmenuzado o chorizo bien sazonado con un toque de salsa verde.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Guacamole</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary whitespace-nowrap min-w-fit text-right">L 145 | L 160 | L 210</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Fresco y cremoso, con totopos. Tradicional (L 145), Con Queso (L 160), o Con Chicharrón (L 210).</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Chalupas</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 146</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Tortillas doradas y ligeras bañadas en salsa verde y roja, cubiertas de pollo y cilantro.</p>
+        </div>
+    </div>
+</section>
+<!-- Category: Sopas -->
+<section class="space-y-6 lg:col-span-2" id="sopas">
+    <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-2xl font-bold tracking-tight uppercase text-primary">Sopas</h3>
+        <div class="flex-1 h-[1px] bg-primary/10"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tepozteca</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 220</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Deliciosa sopa de tortilla acompañada de queso, aguacate y crema.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Caldo Tampiqueño</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 200</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Caldo casero con vegetales y pollo acompañado con tortillas y aguacate.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Ramen Birria</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 235</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Fusión de Japones y mexicano con caldo de birria de res, fideos, cilantro, cebollinas, queso derretido y aguacate.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Ramen Azteca</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 235</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Fusión de Japones y mexicano con caldo de pollo y chiles guajillos, cilantro, cebollinas fideos y aguacate.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Pozole Rojo</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 250</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Caldo preparado con maíz pozolero, carne de cerdo y una mezcla de chiles rojos. Servido con lechuga, rábanos, cebolla, orégano, limón y totopos (Solo fines de semana).</p>
+        </div>
+    </div>
+</section>
+<!-- Category: Tacos -->
+<!-- Category: Tacos (Full Width) -->
+<section class="space-y-8 lg:col-span-2" id="tacos">
+    <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-2xl font-bold tracking-tight uppercase text-primary">Tacos</h3>
+        <div class="flex-1 h-[1px] bg-primary/10"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+        <!-- Item: Orden de Tres Tacos -->
+        <div class="group cursor-default md:col-span-2">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Orden de Tres Tacos</span>
+                <div class="leader-line"></div>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic mb-2">Elige tu carne favorita:</p>
+            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1 text-sm text-stone-600 dark:text-stone-300 list-disc pl-4 font-medium">
+                <li>Pastor</li>
+                <li>Cochinita Pibil</li>
+                <li>Res</li>
+                <li>Chilorio de Pollo</li>
+                <li>Chorizo</li>
+                <li>Chicharrón en salsa verde</li>
+            </ul>
+        </div>
+
+        <div class="md:col-span-2">
+             <h4 class="text-lg font-bold text-primary uppercase tracking-widest mt-4 mb-4 border-b border-primary/10 pb-2">Especialidades</h4>
+        </div>
+
+        <!-- Especialidades List (Grid Layout) -->
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos Puyazo Importado</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 345</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Jugosas carnes de puyazo, servidas en tortillas de maíz calientitas y acompañadas con guacamole, cebolla, cilantro y nuestras salsas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Milanesa</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 295</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Crujientes tacos rellenos con jugosa milanesa de res. Acompañado con pico de gallo, aguacate y nuestra salsa especial.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos Taxco</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 235</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Deliciosos tacos de res con cebolla y chile dulce en fajitas. Acompañado con guacamole y chicharron.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Lengua</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 245</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Trozos de lengua de res en una deliciosa salsa verde de tomatillo con un toque de cebolla y cilantro.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Pollo en Mole</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 240</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Pollo deshebrado bañado en nuestro mole casero, con ajonjolí cebolla y cilantro.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Camaron</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 230</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Camarón con chile dulce y cebolla con salsa chipotle y gratinado con queso gouda y aguacate.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Bistec y Chorizo</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 245</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Delicioso taco de res con chorizo y finas papas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Alambre*</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 295</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Salteado de res o cerdo con pimientos, cebolla, tocino y queso fundido. Con frijoles y tortillas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos de Carnitas</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 235</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Delicioso taco de cerdo frito acompañado de cebolla, cilantro y rabano.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos Birria</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 230</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Delicioso taco de res bañado en consomé de birria, cebolla y cilantro.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos Queso Birria</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 245</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Los que amas y conoces, pero con queso.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos Campechano*</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 235</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Res con chorizo especial y queso gouda fundido.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tacos Flautas *</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 220</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">4 flautas de pollo, res o mixtas, con lechuga bañados con salsa verde, queso y crema.</p>
+        </div>
+    </div>
+    <div class="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/10 text-center md:col-span-2">
+        <p class="text-sm text-primary font-medium italic">Orden de tacos con doble tortilla nixtamalizada, con sus acompañantes y salsas de la casa. <br> *Ordenes con tortillas aparte.</p>
+    </div>
+</section>
+
+<!-- Category: México de mis Amores (Full Width) -->
+<section class="space-y-8 lg:col-span-2" id="mexico-de-mis-amores">
+    <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-2xl font-bold tracking-tight uppercase text-primary">México de mis Amores</h3>
+        <div class="flex-1 h-[1px] bg-primary/10"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Solo Pa'Mi</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 268</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">La mitad de 2 platos combinados a su gusto. Opciones: Tacos, Nachos, Chilaquiles, Sopa Tepozteca, Enchiladas y Tacos Flauta.</p>
+        </div>
+        <!-- Item Group: Tortas -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tortas</span>
+                <div class="leader-line"></div>
+            </div>
+            <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Birria</span> <span class="font-semibold text-primary">L 245</span></li>
+                <li class="flex justify-between"><span>• Pastor</span> <span class="font-semibold text-primary">L 240</span></li>
+                <li class="flex justify-between"><span>• La del Chavo (Jamón y Pollo)</span> <span class="font-semibold text-primary">L 238</span></li>
+                <li class="flex justify-between"><span>• La Buena con Pastor y Chilaquil</span> <span class="font-semibold text-primary">L 275</span></li>
+            </ul>
+        </div>
+        <!-- Item Group: Gringas -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Gringas</span>
+                <div class="leader-line"></div>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic mb-2">2 Tortillas de harina rellenas de queso, tu carne favorita y guacamole.</p>
+            <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Birria</span> <span class="font-semibold text-primary">L 245</span></li>
+                <li class="flex justify-between"><span>• Pastor o Res</span> <span class="font-semibold text-primary">L 235</span></li>
+                <li class="flex justify-between"><span>• Camarón con Chipotle</span> <span class="font-semibold text-primary">L 275</span></li>
+                <li class="flex justify-between"><span>• Pollo o Chorizo</span> <span class="font-semibold text-primary">L 230</span></li>
+            </ul>
+        </div>
+        <!-- Item Group: Chile Relleno -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Chile Relleno</span>
+                <div class="leader-line"></div>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic mb-2">Chile relleno de queso y carne, bañado con salsa casera especiada. Con arroz, aguacate y tortillas.</p>
+            <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Solo Queso</span> <span class="font-semibold text-primary">L 220</span></li>
+                <li class="flex justify-between"><span>• Queso con Res o Pastor</span> <span class="font-semibold text-primary">L 285</span></li>
+                <li class="flex justify-between"><span>• Queso y Camarón con Chipotle</span> <span class="font-semibold text-primary">L 295</span></li>
+                <li class="flex justify-between"><span>• Queso con Pollo o Chorizo</span> <span class="font-semibold text-primary">L 265</span></li>
+            </ul>
+        </div>
+        <!-- Item Group: Enchiladas -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Enchiladas Mexicanas</span>
+                <div class="leader-line"></div>
+            </div>
+             <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Suizas con Pollo y Salsa Verde</span> <span class="font-semibold text-primary">L 245</span></li>
+                <li class="flex justify-between"><span>• Enmoladas de Pollo con Salsa de Mole</span> <span class="font-semibold text-primary">L 255</span></li>
+                <li class="flex justify-between"><span>• Mixtas con Salsa Verde y Roja</span> <span class="font-semibold text-primary">L 255</span></li>
+            </ul>
+        </div>
+        <!-- Item Group: Nachos -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Nachos</span>
+                <div class="leader-line"></div>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic mb-2">Totopos con frijoles, pico de gallo, jalapeños, guacamole, quesillo, cheddar y carne.</p>
+            <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Vegetarianos</span> <span class="font-semibold text-primary">L 220</span></li>
+                <li class="flex justify-between"><span>• Res o Pastor</span> <span class="font-semibold text-primary">L 265</span></li>
+                <li class="flex justify-between"><span>• Pollo o Chorizo</span> <span class="font-semibold text-primary">L 245</span></li>
+            </ul>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Pollo en Mole</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 288</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Jugosa pechuga de pollo bañada en una exquisita salsa de mole con queso, ajonjolí y crema. Servido con arroz, aguacate y tortillas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Carne en su Jugo</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 298</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Jugosa carne en salsa verde de la casa con tocino, rábanos y cebollines en una cama de frijoles parados. Servido con tortillas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Plato del Día</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 290</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Crea tu propio plato con la carne a tu gusto y 2 complementos: arroz, ensalada, guacamole, aguacate, tortillas con quesillo y frijoles.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Category: Para Compartir (Full Width) -->
+<section class="space-y-8 lg:col-span-2" id="para-compartir">
+     <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-2xl font-bold tracking-tight uppercase text-primary">Para Compartir</h3>
+        <div class="flex-1 h-[1px] bg-primary/10"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Taquicardia</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 684</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">10 tacos a tu manera.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Sólo Antojo (4 Personas)</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 1048</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">3 Carnes a elección, guacamole, frijoles, 3 sopes, 3 chalupitas y esquites con totopos. Incluye 20 tortillas y salsas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Tabla Solo Mexico</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 780</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Fundido mixto, guacamole con totopos, 3 Tacos, Gringa de pastor y 2 sopes.</p>
+        </div>
+         <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Solo Pa'Dos (2 Personas)</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 680</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">3 Carnes a elección, guacamole, frijoles y 2 sopes. Incluye 10 tortillas y salsas.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Combo Birria</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 615</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">3 Tacos de Birria, 3 Tacos de queso Birria y 1 Gringa de birria.</p>
+        </div>
+
+        <!-- Item Group: Chilaquiles -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Chilaquiles</span>
+                <div class="leader-line"></div>
+            </div>
+            <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Con Huevo, Frijoles y Aguacate (Verde o Roja)</span> <span class="font-semibold text-primary">L 220</span></li>
+                <li class="flex justify-between"><span>• Pastor o Pollo (Verde o Roja)</span> <span class="font-semibold text-primary">L 230</span></li>
+                <li class="flex justify-between"><span>• Tricolor (Ambas Salsas)</span> <span class="font-semibold text-primary">L 240</span></li>
+                <li class="flex justify-between"><span>• Rellenos de Chicharrón (Verde y Aguacate)</span> <span class="font-semibold text-primary">L 245</span></li>
+                 <li class="flex justify-between"><span>• De Birria (Cebolla y Cilantro)</span> <span class="font-semibold text-primary">L 245</span></li>
+            </ul>
+        </div>
+        
+         <!-- Item Group: Toritos -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-2">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Toritos</span>
+                <div class="leader-line"></div>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic mb-2">Tortilla de harina con carne, bañada en salsa y gratinada.</p>
+            <ul class="text-sm text-stone-500 dark:text-stone-400 font-light italic space-y-1 pl-4">
+                <li class="flex justify-between"><span>• Pastor, Chicharrón, o Chorizo (Salsa Roja & Valentina)</span> <span class="font-semibold text-primary">L 235</span></li>
+                <li class="flex justify-between"><span>• Camarones (Salsa Chipotle)</span> <span class="font-semibold text-primary">L 255</span></li>
+                <li class="flex justify-between"><span>• Birria (Salsa Birria, Aguacate)</span> <span class="font-semibold text-primary">L 245</span></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Category: Postres -->
+<section class="space-y-6 lg:col-span-2" id="postres">
+    <div class="flex items-center gap-4 mb-6">
+        <h3 class="text-2xl font-bold tracking-tight uppercase text-primary">Postres</h3>
+        <div class="flex-1 h-[1px] bg-primary/10"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Flan de la Abuela Eve</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 90</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Suave textura caramelizada con receta familiar.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Chimichanga de Banano y Cajeta</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 115</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Crujiente por fuera, dulce y suave por dentro.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Pastel Borracho</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary">L 90</span>
+            </div>
+            <p class="text-sm text-stone-500 dark:text-stone-400 font-light italic">Bizcocho humedecido con un toque de licor.</p>
+        </div>
+        <!-- Item -->
+        <div class="group cursor-default">
+            <div class="flex items-end justify-between mb-1">
+                <span class="font-bold text-lg tracking-tight group-hover:text-primary transition-colors">Torrejas</span>
+                <div class="leader-line"></div>
+                <span class="font-bold text-primary text-xs italic font-normal">Solo por encargo</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Footer Info -->
+<div class="mt-24 pt-12 border-t border-primary/10 text-center">
+<div class="flex flex-col md:flex-row justify-center items-center gap-8 text-xs uppercase tracking-widest text-stone-400 mb-8">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">location_on</span>
+<span>Col. La Trejo, 10 calle, San Pedro Sula</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+<span>+504 9451-5124</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>Lun - Vie: 11:00 AM - 08:00 PM | Sáb - Dom: 11:00 AM - 09:00 PM</span>
+</div>
+</div>
+<div class="flex justify-center gap-6 mb-8">
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary transition-colors group" href="https://www.instagram.com/solomexicohn" target="_blank">
+<svg class="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="w-10 h-10 flex items-center justify-center rounded-full bg-primary/10 hover:bg-primary transition-colors group" href="https://www.facebook.com/Restaurantesolomexico/" target="_blank">
+<svg class="w-5 h-5 text-primary group-hover:text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+</a>
+</div>
+</div>
+<!-- Google Map -->
+<div class="max-w-6xl mx-auto px-6 mb-12">
+    <div class="w-full h-80 bg-stone-100 dark:bg-stone-900 rounded-xl overflow-hidden shadow-lg border border-primary/10">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.741270203122!2d-88.0391393!3d15.498342999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f665b6485cc9f59%3A0x37c2972befd9bf4!2sRestaurante%20Solo%20Mexico!5e0!3m2!1sen!2shn!4v1770698250124!5m2!1sen!2shn" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"></iframe>
+    </div>
+</div>
+<p class="text-[10px] uppercase tracking-widest text-stone-400 text-center pb-8">© 2026 Solo México Restaurante. Todos los derechos reservados.</p>
+</div>
+</main>
+</body></html>
