@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solo Mexico | Cocina Mexicana Casera</title>
+<meta name="description" content="Restaurante Solo México en San Pedro Sula. Auténtica comida mexicana: tacos, pozole, birria y más. ¡Haz tu reservación en línea!">
+<meta name="keywords" content="Solo Mexico, Restaurante Mexicano, San Pedro Sula, Tacos, Birria, Comida Mexicana Honduras, Restaurante">
+<meta property="og:title" content="Solo Mexico | Sabor Auténtico Mexicano">
+<meta property="og:description" content="Disfruta de la mejor comida mexicana en SPS. ¡Reserva tu mesa o pide para llevar!">
+<meta property="og:image" content="https://ui.wembla.com/api/browse/media/solomexico/LOGO_SOLO_MEXICO.png?view=1">
+<meta property="og:url" content="https://solomexico.hn">
+<meta property="og:type" content="website">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="icon" href="favicon.ico">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b4991",
+                        "accent-gold": "#b08d57",
+                        "background-dark": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .btn-hover-effect {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Carousel Animations */
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes scroll-right {
+             from { transform: translateX(-50%); }
+             to { transform: translateX(0); }
+        }
+        .animate-speed-1 {
+            animation: scroll-left 45s linear infinite;
+        }
+        .animate-speed-2 {
+             animation: scroll-right 55s linear infinite;
+        }
+        .animate-speed-3 {
+             animation: scroll-left 65s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 font-display min-h-screen relative z-0">
+    <h1 class="sr-only">Restaurante Solo México - Auténtica Comida Mexicana en San Pedro Sula</h1>
+
+<!-- 1. BACKGROUND CAROUSEL (Fixed, Z-[-1]) -->
+<div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+    <!-- Overlay -->
+    <div class="absolute inset-0 z-10 bg-white/80 backdrop-blur-[1px]"></div>
+    
+    <!-- Images Container -->
+    <div class="absolute inset-0 z-0 flex flex-col justify-center gap-4 -rotate-[5deg] scale-125 opacity-60">
+        <!-- Row 1 -->
+        <div class="flex gap-4 w-[400%] animate-speed-1">
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/10.png?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-110.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-118.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-122.jpg?view=1')"></div>
+             <!-- Duplicates -->
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/10.png?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-110.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-118.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-122.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/10.png?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-110.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-118.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-122.jpg?view=1')"></div>
+        </div>
+        <!-- Row 2 -->
+        <div class="flex gap-4 w-[400%] animate-speed-2">
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-132.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/lengua.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/tacosbistec.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-18.jpg?view=1')"></div>
+             <!-- Duplicates -->
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-132.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/lengua.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/tacosbistec.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-18.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-132.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/lengua.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/tacosbistec.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-18.jpg?view=1')"></div>
+        </div>
+        <!-- Row 3 -->
+        <div class="flex gap-4 w-[400%] animate-speed-3">
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/10.png?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-118.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-132.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/tacosbistec.jpg?view=1')"></div>
+             <!-- Duplicates -->
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/10.png?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-118.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-132.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/tacosbistec.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/10.png?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-118.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/SM906-132.jpg?view=1')"></div>
+             <div class="w-72 h-48 rounded-xl bg-cover bg-center shrink-0 shadow-lg" style="background-image: url('https://ui.wembla.com/api/browse/media/solomexico/tacosbistec.jpg?view=1')"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 2. MAIN CONTENT (Relative, Z-10, Pointer-Events-Auto) -->
+<div class="relative min-h-screen w-full flex flex-col items-center justify-center z-10 px-6 py-12 pointer-events-auto">
+    <div class="w-full max-w-md flex flex-col items-center">
+        <!-- Logo -->
+        <div class="mb-12 w-72 md:w-96">
+            <img alt="Solo Mexico Logo" class="w-full h-auto drop-shadow-2xl" src="https://ui.wembla.com/api/browse/media/solomexico/LOGO_SOLO_MEXICO.png?view=1"/>
+        </div>
+        
+        <!-- Buttons -->
+        <div class="w-full flex flex-col space-y-4">
+            <a class="btn-hover-effect w-full py-4 bg-primary/90 hover:bg-primary text-white text-center font-bold rounded-lg uppercase tracking-widest text-sm backdrop-blur-sm flex items-center justify-center gap-3 border-b-4 border-indigo-900 shadow-xl active:border-b-0 active:translate-y-1 transition-all" href="menu.html">
+                <span class="material-symbols-outlined text-xl">restaurant_menu</span>
+                Ver Menú
+            </a>
+            <a class="btn-hover-effect w-full py-4 bg-white/90 hover:bg-white text-stone-700 text-center font-bold rounded-lg uppercase tracking-widest text-sm backdrop-blur-sm flex items-center justify-center gap-3 border-b-4 border-stone-300 shadow-xl active:border-b-0 active:translate-y-1 transition-all" href="https://maps.app.goo.gl/YourShortLinkHere" target="_blank" onclick="window.location.href='https://www.google.com/maps/place/Restaurante+Solo+Mexico/@15.4983482,-88.0417196,17z/data=!3m1!4b1!4m6!3m5!1s0x8f665b6485cc9f59:0x37c2972befd9bf4!8m2!3d15.498343!4d-88.0391393!16s%2Fg%2F11bt_nwhn8?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D'; return false;">
+                <span class="material-symbols-outlined text-xl text-primary">location_on</span>
+                Nuestra Ubicación
+            </a>
+            <a class="btn-hover-effect w-full py-4 bg-white/90 hover:bg-white text-stone-700 text-center font-bold rounded-lg uppercase tracking-widest text-sm backdrop-blur-sm flex items-center justify-center gap-3 border-b-4 border-stone-300 shadow-xl active:border-b-0 active:translate-y-1 transition-all" href="tel:+50494515124">
+                <span class="material-symbols-outlined text-xl text-primary">call</span>
+                Llámanos
+            </a>
+            <a class="btn-hover-effect w-full py-4 bg-white/90 hover:bg-white text-stone-700 text-center font-bold rounded-lg uppercase tracking-widest text-sm backdrop-blur-sm flex items-center justify-center gap-3 border-b-4 border-stone-300 shadow-xl active:border-b-0 active:translate-y-1 transition-all" href="https://wa.me/50494515124" target="_blank">
+                <svg class="w-5 h-5 fill-current text-primary" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                WhatsApp
+            </a>
+            <button class="btn-hover-effect w-full py-4 bg-primary/90 hover:bg-primary text-white text-center font-bold rounded-lg uppercase tracking-widest text-sm backdrop-blur-sm flex items-center justify-center gap-3 border-b-4 border-indigo-900 shadow-xl active:border-b-0 active:translate-y-1 transition-all" onclick="openReservationModal()">
+                <span class="material-symbols-outlined text-xl">calendar_month</span>
+                Reservaciones
+            </button>
+        </div>
+
+        <!-- Horarios Section -->
+        <div class="w-full mt-4 p-4 bg-white/70 backdrop-blur-md border border-stone-200 shadow-sm rounded-lg text-center">
+             <div class="flex items-center justify-center gap-2 mb-2 text-accent-gold">
+                 <span class="material-symbols-outlined text-lg">schedule</span>
+                 <h3 class="text-xs uppercase tracking-widest font-bold">Horarios de Atención</h3>
+             </div>
+             <div class="grid grid-cols-2 gap-4 text-xs text-stone-600 pb-3 mb-2 border-b border-primary/5">
+                 <div class="text-right border-r border-primary/10 pr-4">
+                     <p class="font-semibold text-primary">Lun, Mié - Vie</p>
+                     <p class="font-light opacity-80">11:00 AM - 08:00 PM</p>
+                 </div>
+                 <div class="text-left pl-4">
+                     <p class="font-semibold text-primary">Sáb - Dom</p>
+                     <p class="font-light opacity-80">11:00 AM - 09:00 PM</p>
+                 </div>
+             </div>
+             <div class="text-xs font-bold text-red-400 uppercase tracking-widest mt-1">
+                 Martes: Cerrado
+             </div>
+        </div>
+        
+        <!-- Socials -->
+        <div class="mt-12 flex flex-col items-center space-y-6">
+             <div class="flex space-x-6">
+                 <!-- Instagram -->
+                 <a class="text-primary/60 hover:text-primary transition-colors" href="https://www.instagram.com/solomexicohn" target="_blank" aria-label="Instagram">
+                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                 </a>
+                 <!-- Facebook -->
+                  <a class="text-primary/60 hover:text-primary transition-colors" href="https://www.facebook.com/Restaurantesolomexico/" target="_blank" aria-label="Facebook">
+                     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                         <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path>
+                     </svg>
+                 </a>
+             </div>
+             <p class="text-stone-400 text-[10px] uppercase tracking-[0.2em] font-medium">San Pedro Sula, Honduras • Cocina Mexicana</p>
+        </div>
+    </div>
+    <div class="absolute bottom-6 text-center w-full">
+        <p class="text-stone-300 text-[10px] font-light tracking-[0.25em]">© SOLO MEXICO. TODOS LOS DERECHOS RESERVADOS.</p>
+    </div>
+</div>
+
+<!-- 3. MODAL (Fixed, Z-50) -->
+<div id="reservationModal" class="fixed inset-0 z-50 flex items-center justify-center px-4 hidden opacity-0 transition-opacity duration-300">
+    <!-- Backdrop -->
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-sm" onclick="closeReservationModal()"></div>
+    
+    <!-- Modal Content -->
+    <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-md p-8 transform scale-95 transition-transform duration-300 z-10" id="modalContent">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-2xl font-bold text-primary">Reservar Mesa</h3>
+            <button onclick="closeReservationModal()" class="text-stone-400 hover:text-red-500 transition-colors">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        
+        <form id="reservationForm" class="space-y-4">
+            <div>
+                <label for="name" class="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">Nombre</label>
+                <input type="text" id="name" name="name" required class="w-full rounded-md border-stone-200 focus:border-primary focus:ring-primary text-sm bg-stone-50" placeholder="Tu nombre completo">
+            </div>
+            
+            <div>
+                <label for="email" class="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required class="w-full rounded-md border-stone-200 focus:border-primary focus:ring-primary text-sm bg-stone-50" placeholder="tu@correo.com">
+            </div>
+            
+            <div>
+                <label for="phone" class="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required class="w-full rounded-md border-stone-200 focus:border-primary focus:ring-primary text-sm bg-stone-50" placeholder="+504 0000-0000">
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="date" class="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">Fecha</label>
+                    <input type="date" id="date" name="date" required class="w-full rounded-md border-stone-200 focus:border-primary focus:ring-primary text-sm bg-stone-50">
+                </div>
+                <div>
+                    <label for="time" class="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">Hora</label>
+                    <input type="time" id="time" name="time" required class="w-full rounded-md border-stone-200 focus:border-primary focus:ring-primary text-sm bg-stone-50">
+                </div>
+            </div>
+            
+            <div>
+                <label for="guests" class="block text-xs font-bold text-stone-500 uppercase tracking-wider mb-1">Personas</label>
+                <input type="number" id="guests" name="guests" min="1" required class="w-full rounded-md border-stone-200 focus:border-primary focus:ring-primary text-sm bg-stone-50" placeholder="Ej. 4">
+            </div>
+
+            <div class="pt-2">
+                <button type="submit" class="w-full py-3 bg-primary text-white font-bold rounded-lg uppercase tracking-widest text-sm hover:bg-primary/90 transition-colors shadow-lg">
+                    Confirmar Reservación
+                </button>
+            </div>
+            <p class="text-[10px] text-center text-stone-400 mt-4">Recibiras un mensaje confirmando el estado de tu reservación.</p>
+        </form>
+    </div>
+</div>
+
+<script>
+    function openReservationModal() {
+        const modal = document.getElementById('reservationModal');
+        const content = document.getElementById('modalContent');
+        modal.classList.remove('hidden');
+        // Small delay to allow display:block to apply before opacity transition
+        setTimeout(() => {
+            modal.classList.remove('opacity-0');
+            content.classList.remove('scale-95');
+            content.classList.add('scale-100');
+        }, 10);
+    }
+
+    function closeReservationModal() {
+        const modal = document.getElementById('reservationModal');
+        const content = document.getElementById('modalContent');
+        modal.classList.add('opacity-0');
+        content.classList.remove('scale-100');
+        content.classList.add('scale-95');
+        
+        setTimeout(() => {
+            modal.classList.add('hidden');
+        }, 300);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const dateVal = document.getElementById('date').value;
+            const timeVal = document.getElementById('time').value;
+            
+            // Convertir a formato ISO para Google Calendar (YYYY-MM-DDTHH:mm:ss)
+            // Asumimos 2 horas de duración para la reserva
+            const startDateTime = `${dateVal}T${timeVal}:00`;
+            
+            // Calculamos hora final (simple cálculo de string o date object)
+            const startDateObj = new Date(startDateTime);
+            const endDateObj = new Date(startDateObj.getTime() + 2 * 60 * 60 * 1000); // +2 horas
+            const endDateTime = endDateObj.toISOString().split('.')[0]; // Quitamos ms para compatibilidad limpia
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                date: dateVal,
+                time: timeVal,
+                startDateTime: startDateTime, // Para Google Calendar Start
+                endDateTime: endDateTime,     // Para Google Calendar End
+                guests: document.getElementById('guests').value,
+                timestamp: new Date().toISOString()
+            };
+
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerText;
+            submitBtn.innerText = 'Enviando...';
+            submitBtn.disabled = true;
+
+            // webhook URL
+            const webhookUrl = 'https://n8n.wembla.com/webhook/smwebsite'; 
+            
+            // Real implementation:
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('¡Solicitud enviada con éxito! Te contactaremos pronto para confirmar.');
+                    closeReservationModal();
+                    this.reset();
+                } else {
+                    alert('Error al enviar la solicitud. Por favor intenta por WhatsApp.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error de conexión. Intenta nuevamente.');
+            })
+            .finally(() => {
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+    });
+</script>
+</body></html>
